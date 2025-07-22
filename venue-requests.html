@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venue Requests – VelvetLive</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+    function handleSubmit(event) {
+        event.preventDefault();
+        alert('Thanks for your request! Our team will reach out.');
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>VelvetLive</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="musician-intake.html">Musician Sign‑up</a></li>
+                <li><a href="venue-requests.html">Venue Requests</a></li>
+                <li><a href="featured-artists.html">Featured Artists</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section>
+            <h2>Venue Requests</h2>
+            <p>Request a performance at your venue by filling out the form below.</p>
+            <form onsubmit="handleSubmit(event)" action="#">
+                <label for="venueName">Venue Name</label>
+                <input type="text" id="venueName" name="venueName" required>
+
+                <label for="contactPerson">Contact Person</label>
+                <input type="text" id="contactPerson" name="contactPerson" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="date">Event Date</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="eventType">Event Type</label>
+                <input type="text" id="eventType" name="eventType" required>
+
+                <label for="capacity">Capacity</label>
+                <input type="number" id="capacity" name="capacity" required>
+
+                <label for="notes">Additional Notes</label>
+                <textarea id="notes" name="notes" rows="4"></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 VelvetLive. All rights reserved.</p>
+    </footer>
+</body>
+</html>
