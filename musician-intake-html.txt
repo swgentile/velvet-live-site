@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Venue Booking Request</title>
+  <title>Musician Sign-Up</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -13,8 +13,8 @@
         <h1 class="logo">VelvetLive</h1>
         <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
-          <li><a href="musician-intake.html">Musician Sign-Up</a></li>
-          <li><a href="venue-requests.html" class="active">Venue Requests</a></li>
+          <li><a href="musician-intake.html" class="active">Musician Sign-Up</a></li>
+          <li><a href="venue-requests.html">Venue Requests</a></li>
           <li><a href="featured-artists.html">Featured Artists</a></li>
         </ul>
       </div>
@@ -22,11 +22,11 @@
   </header>
 
   <section class="form-section">
-    <h2>Request a VelvetLive Artist</h2>
-    <p>Fill out this form to request a live AI-powered music performance at your venue or event.</p>
+    <h2>Musician Sign-Up</h2>
+    <p>Interested in performing AI-generated music with VelvetLive? Fill out the form below and we’ll get in touch!</p>
 
     <div class="form-container">
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScA46ewYmQiw8PtvnQHb9m1HO_YkjHw-JOnhDIBBd8j3CuV5g/viewform?embedded=true" width="100%" height="950" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSejGdkGQH6oMKPBdEvLe9ScDFZBt5fyoxTJG-a7DO5BMEvv2g/viewform?embedded=true" width="100%" height="900" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
     </div>
   </section>
 
