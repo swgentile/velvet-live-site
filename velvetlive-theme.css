@@ -1,0 +1,121 @@
+
+:root {
+  --neon-pink: #ff3cac;
+  --neon-blue: #00f0ff;
+  --bg-dark: #0d0d0d;
+  --text-light: #fefefe;
+}
+
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+}
+
+header {
+  background-color: #111;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  color: var(--neon-pink);
+  font-size: 2rem;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links li a {
+  color: var(--text-light);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+  color: var(--neon-blue);
+}
+
+.hero {
+  background: url('https://source.unsplash.com/1600x600/?concert,lights') no-repeat center center/cover;
+  padding: 5rem 2rem;
+  text-align: center;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: var(--neon-pink);
+  text-shadow: 0 0 10px var(--neon-pink);
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.hero .cta-button {
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  background-color: var(--neon-blue);
+  color: #000;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  box-shadow: 0 0 10px var(--neon-blue);
+  transition: background-color 0.3s;
+}
+
+.hero .cta-button:hover {
+  background-color: #0ff;
+}
+
+.artist-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+  justify-content: center;
+}
+
+.artist-card {
+  background-color: #1a1a1a;
+  color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 300px;
+  box-shadow: 0 0 10px rgba(0,255,255,0.2);
+  transition: transform 0.3s;
+}
+
+.artist-card:hover {
+  transform: scale(1.05);
+}
+
+.artist-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.artist-card h3 {
+  margin: 1rem;
+  color: var(--neon-pink);
+}
+
+.artist-card p {
+  margin: 0 1rem 1rem;
+}
