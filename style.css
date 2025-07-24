@@ -1,16 +1,19 @@
-/* General Reset */
+
 body {
-  margin: 0;
   font-family: 'Helvetica Neue', sans-serif;
-  background-color: #f8f9fb;
-  color: #333;
+  margin: 0;
+  padding: 0;
+  background-color: #fdfdfd;
 }
 
-/* Navigation */
-nav {
-  background: white;
-  border-bottom: 1px solid #e0e0e0;
+header {
+  background-color: #1c1c1c;
   padding: 1rem 2rem;
+}
+
+.logo {
+  color: white;
+  font-size: 1.5rem;
 }
 
 .nav-container {
@@ -19,36 +22,49 @@ nav {
   align-items: center;
 }
 
-.logo {
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: #2c2c2c;
-}
-
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
-.nav-links a {
+.nav-links li a {
+  color: white;
   text-decoration: none;
-  color: #444;
-  font-weight: 500;
+  font-weight: bold;
 }
 
-.nav-links a.active {
-  color: #e63946;
+.nav-links li a.active {
+  text-decoration: underline;
 }
 
-/* Hero Section */
 .hero {
+  padding: 2rem;
+  background: linear-gradient(to right, #000, #fuchsia);
+  color: white;
+  text-align: center;
+}
+
+.artists-section {
+  padding: 2rem;
+}
+
+.artist-grid {
   display: flex;
   flex-wrap: wrap;
-  padding: 4rem 2rem;
-  background: linear-gradient(to right, #f7e9f0 50%, #ecf2f9 50%);
+  gap: 2rem;
 }
 
-.hero-left {
-  flex: 1;
-  paddin
+.artist-card {
+  flex: 1 1 300px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.form-section {
+  padding: 2rem;
+}
