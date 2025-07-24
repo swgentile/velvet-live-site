@@ -1,0 +1,27 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+:root {
+  --bg: #ffffff;
+  --primary: #111111;
+  --accent: #dddddd;
+  --text: #111111;
+}
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', sans-serif;
+}
+.cta-button {
+  background: var(--primary);
+  color: white;
+  padding: 0.8rem 2rem;
+  border-radius: 4px;
+  font-weight: 500;
+  border: none;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.cta-button:hover {
+  background: #333;
+}
