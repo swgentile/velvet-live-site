@@ -3,37 +3,78 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Featured Artists</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Artist Showcase</title>
+  <link rel="stylesheet" href="velvetlive-theme.css" />
+  <style>
+    .artist-showcase {
+      padding: 2rem;
+      background-color: #111;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+    .artist-card {
+      background-color: #1c1c1c;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+      transition: transform 0.3s ease;
+      text-align: center;
+    }
+    .artist-card:hover {
+      transform: translateY(-5px);
+    }
+    .artist-card img {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+    }
+    .artist-card .logo-img {
+      max-height: 140px;
+      object-fit: contain;
+      padding: 1rem;
+      background-color: #264400;
+    }
+    .artist-card h3 {
+      color: var(--neon-pink);
+      margin: 1rem 0 0.5rem;
+    }
+    .artist-card p {
+      margin: 0 1rem 1rem;
+      color: #ccc;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <nav>
-      <div class="nav-container">
-        <h1 class="logo">VelvetLive</h1>
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="musicians-intake.html">Musician Sign-Up</a></li>
-          <li><a href="venue-requests.html">Venue Requests</a></li>
-          <li><a href="featured-artists.html" class="active">Featured Artists</a></li>
-        </ul>
-      </div>
-    </nav>
+    <div class="nav-container">
+      <div class="logo">VelvetLive</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="musicians-intake.html">Musician Sign-Up</a></li>
+        <li><a href="venue-requests.html">Venue Requests</a></li>
+        <li><a href="featured-artists.html" class="active">Featured Artists</a></li>
+      </ul>
+    </div>
   </header>
-  <section class="artists-section">
-    <h2>Our Featured Artists</h2>
-    <div class="artist-grid">
-      <div class="artist-card">
-        <img src="https://source.unsplash.com/300x200/?musician,portrait&sig=1" alt="Alex Rivera" />
-        <h3>Alex Rivera</h3>
-        <p>Guitarist with a taste for AI-driven synthwave</p>
-      </div>
-      <div class="artist-card">
-        <img src="https://source.unsplash.com/300x200/?singer,portrait&sig=2" alt="Jade Knight" />
-        <h3>Jade Knight</h3>
-        <p>Performs AI-pop blends and indie reinterpretations</p>
-      </div>
+
+  <section class="artist-showcase">
+    <div class="artist-card">
+      <img src="https://source.unsplash.com/600x400/?guitarist,live" alt="Alex Rivera" />
+      <h3>Alex Rivera</h3>
+      <p>Synthwave revival with Detroit grit.</p>
+    </div>
+    <div class="artist-card">
+      <img src="https://source.unsplash.com/600x400/?dj,club" alt="Jade Knight" />
+      <h3>Jade Knight</h3>
+      <p>AI-pop blends and indie reinterpretations.</p>
+    </div>
+    <div class="artist-card">
+      <img class="logo-img" src="mustard-seed-logo.png" alt="Mustard Seed logo" />
+      <h3>Mustard Seed</h3>
+      <p>Roots, rhythm, and something growing — artist spotlight coming soon.</p>
     </div>
   </section>
+
 </body>
 </html>
